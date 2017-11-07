@@ -2,7 +2,7 @@
 def bubble_sort_algo(listX):
     n = len(listX)
     for i in range(0, n - 1):
-        for j in range(0, n - 2):
+        for j in range(0, n - i -1):
             if listX[j] > listX[j+1]:
                 # PYTHONIC WAY TO SWAP OBJECTS
                 listX[j], listX[j+1] = listX[j+1], listX[j]
