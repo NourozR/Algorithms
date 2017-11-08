@@ -18,10 +18,10 @@ print(Power(2,4))
 
 # FIBONACCI USING RECURSION		
 def Fibonacci(n):
-	if n==0 or n==1:
+	if n==1 or n==2:
 		return 1
 	else:
-		return (n+Fibonacci(n-1))
+		return (Fibonacci(n-1)+Fibonacci(n-2))
 
 print(Fibonacci(10))	
 
